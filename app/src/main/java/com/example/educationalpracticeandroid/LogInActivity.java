@@ -55,11 +55,11 @@ public class LogInActivity extends AppCompatActivity {
     }
 
 
+    Button signIn, profileSignIn;
 
     private void getSignIn() {
 
-
-        Button signIn = findViewById(R.id.signInButton);
+        signIn = findViewById(R.id.signInButton);
 
         signIn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -82,7 +82,32 @@ public class LogInActivity extends AppCompatActivity {
                 }
             }
         });
+
+        profileSignIn = findViewById(R.id.profileButton);
+
+        profileSignIn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (email.getText().toString().equals(""))
+                {
+                    Toast.makeText(LogInActivity.this, "Поле email не может быть пустым", Toast.LENGTH_SHORT).show();
+                }
+                else if (password.getText().toString().equals(""))
+                {
+                    Toast.makeText(LogInActivity.this, "Поле password не может быть пустым", Toast.LENGTH_SHORT).show();
+                }
+                else if (!email.getText().toString().contains("@"))
+                {
+                    Toast.makeText(LogInActivity.this, "Mail должен содержать символ @", Toast.LENGTH_SHORT).show();
+                }
+                else
+                {
+                    getUser();
+                }
+            }
+        });
     }
+
 
     private void openRegistration() {
         TextView registrationText = findViewById(R.id.registerText);
