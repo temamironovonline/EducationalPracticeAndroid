@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Музыка нас связала, тайной нашей стала</string>
+    <string name="helloMessage"><b>ПРИВЕТ</b></string>
+    <string name="wishMessage">Наслаждайся отборочными.\nБудь внимателен.\nДелай хорошо.</string>
+    <string name="logIn">Войти в аккаунт</string>
+    <string name="signUpText">Еще нет аккаунта? <b>Зарегистрируйтесь</b></string>
+    <string name="registrationHere">Тут будет регистрация</string>
+    <string name="signInText">Sign in</string>
+    <string name="emailText">Email</string>
+    <string name="passwordText">Пароль</string>
+    <string name="registerText">Register</string>
+    <string name="profileText">Профиль</string>
+    <string name="mainMenuGreetingText">С возвращением, </string>
+    <string name="mainMenuQuestionText">Каким ты ощущаешь себя сегодня?</string>
+    <string name="headerBlockElement">Заголовок блока</string>
+    <string name="descriptionBlockElement">Кратенькое описание блока двумя строчками</string>
+    <string name="moreBlockElement">Подробнее</string>
+    <string name="menuWillBeHere">Здесь будет меню</string>
+    <string name="imageDateCreateText">Дата создания</string>
+    <string name="buttonAddText">+</string>
+    <string name="exitAccount">exit</string>
+    <string name="musicWillBeHere">Здесь будет прослушивание</string>
+    <string name="deletePhotoText">Удалить</string>
+    <string name="closePhotoText">Закрыть</string>
+
+
+
+</resources>

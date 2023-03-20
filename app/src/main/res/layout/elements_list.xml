@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/firstBlock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/element_background"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_weight="1"
+            android:text="@string/headerBlockElement"
+            android:textColor="@color/backgroundColor"
+            app:layout_constraintStart_toStartOf="parent"
+
+            android:textSize="20sp"
+            tools:ignore="NotSibling" />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="150dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_weight="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/Title"
+            android:text="@string/descriptionBlockElement"
+            android:textColor="@color/backgroundColor"
+            android:textSize="13sp"
+            tools:ignore="NotSibling" />
+
+        <android.widget.Button
+            android:id="@+id/btnFirstMore"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_element"
+            android:clickable="true"
+            android:paddingHorizontal="30dp"
+            android:text="@string/moreBlockElement"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+
+            app:layout_constraintTop_toBottomOf="@id/description"
+            android:focusable="true"
+            tools:ignore="NotSibling" />
+
+        <ImageView
+            android:id="@+id/Images"
+            android:layout_width="190dp"
+            android:layout_height="150dp"
+            android:layout_weight="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:padding="10dp"
+            app:srcCompat="@drawable/first_element_image"
+            tools:ignore="MissingConstraints" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
